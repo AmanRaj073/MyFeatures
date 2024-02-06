@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./GetInput.css";
 const GetInput = () => {
 
   const [inputValue, setInput] = useState();
   console.log({inputValue:inputValue});
+
+  useEffect(()=>{
+    document.title ="Get Input"
+  })
 
   return (
     <div>

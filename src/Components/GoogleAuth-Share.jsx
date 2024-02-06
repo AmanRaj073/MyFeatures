@@ -1,6 +1,7 @@
 import logo from "../logo.svg";
 import { GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
+import { useEffect } from "react";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -9,6 +10,10 @@ import {
 } from "react-share";
 
 function GoogleShare() {
+
+  useEffect(()=>{
+    document.title ="Google Share"
+  })
 
 const shareUrl=window.location.href // Fetch Current Url of page
 
